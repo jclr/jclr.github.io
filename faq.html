@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jan Corwin, D.C., LLC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -75px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      opacity: 0.8;
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+    /* FOOTER STYLE
+    ------------------------------------------- */
+
+    * {
+      margin: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    .wrapper {
+      min-height: 100%;
+      height: auto !important;
+      height: 100%;
+      margin: 0 auto -4em;
+    }
+
+    .footer, .push {
+      height: 4em;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Dr. Corwin</a></li>
+                <li><a href="circle.html">About Circle Health Care</a></li>
+                <li class="active"><a href="faq.html">Chiropractic FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="download.html">Download</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <div class="row">
+        <div class="span8">
+          <h2>
+      Frequently Asked Questions
+    </h2>
+
+
+    <p>
+  <a name="_top"></a>Below are answers to the most commonly asked questions, courtesy of the American Chiropractic Association.</p>
+<ul>
+  <li>
+    <div>
+      <a href="#conditions">What conditions do chiropractors treat?</a></div>
+  </li>
+  <li>
+    <div>
+      <a href="#select">How do I select a doctor of chiropractic?</a></div>
+  </li>
+  <li>
+    <div>
+      <a href="#referral">Does chiropractic treatment require a referral from an MD?</a></div>
+  </li>
+  <li>
+    <div>
+      <a href="#safety">Is chiropractic treatment safe?</a></div>
+  </li>
+  <li>
+    <div>
+      <a href="#children">Is chiropractic treatment appropriate for children?</a></div>
+  </li>
+  <li>
+    <div>
+      <a href="#hospitals">Are chiropractors allowed to practice in hospitals or use medical outpatient facilities?</a></div>
+  </li>
+  <li>
+    <div>
+      <a href="#insurance">Do insurance plans cover chiropractic?</a></div>
+  </li>
+  <li>
+    <div>
+      <a href="#education">What type of education and training do chiropractors have?</a></div>
+  </li>
+  <li>
+    <div>
+      <a href="#adjustment">How is a chiropractic adjustment performed?</a></div>
+  </li>
+  <li>
+    <div>
+      <a href="#ongoing">Is chiropractic treatment ongoing?</a></div>
+  </li>
+  <li>
+    <div>
+      <a href="#popping">Why is there a popping sound when a joint is adjusted?</a></div>
+  </li>
+</ul>
+<hr noshade="noshade" size="1" width="100%" />
+<p>
+  <a name="conditions"></a><strong>What conditions do chiropractors treat?</strong><br />
+  Doctors of Chiropractic (DCs) care for patients of all ages, with a variety of health conditions.&nbsp; DCs are especially well known for their expertise in caring for patients with back pain, neck pain and headaches...particularly with their highly skilled&nbsp; manipulations or chiropractic adjustments. They also care for patients with a wide range of injuries and disorders of the musculoskeletal system, involving the muscles, ligaments and joints.&nbsp; These painful conditions often involve or impact the nervous system, which can cause referred pain and dysfunction distant to the region of injury. &nbsp;The benefits of chiropractic care extend to general health issues, as well, since our body structure affects our overall function. DCs also counsel patients on diet, nutrition, exercise, healthy habits, and occupational and lifestyle modification.</p>
+<hr noshade="noshade" size="1" width="100%" />
+<p>
+  <a name="select"></a><strong>How do I select a doctor of chiropractic?</strong><br />
+  One of the best ways to select a doctor of chiropractic (DC) is by getting a referral from a friend, family member, colleague, or another health care provider. You can also locate a DC near you by using the American Chiropractic Association&rsquo;s Find a Doctor search tool, <a href="http://www.acatoday.org/DocSearch">www.acatoday.org/DocSearch</a>.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</p>
+<hr noshade="noshade" size="1" width="100%" />
+<p>
+  &nbsp;<a name="referral"></a><strong>Does chiropractic treatment require a referral from an MD?</strong><br />
+  A referral is usually not needed to see a doctor of chiropractic (DC); however, your health plan may have specific referral requirements. You may want to contact your employer&rsquo;s human resources department&mdash;or the insurance plan directly&mdash;to find out if there are any referral requirements. Most plans allow you to just call and schedule an appointment with a DC.</p>
+<hr noshade="noshade" size="1" width="100%" />
+<p>
+  <a name="safety"></a><strong>Is chiropractic treatment safe?</strong><br />
+  Chiropractic is widely recognized as one of the safest drug-free, non-invasive therapies available for the treatment of neuromusculoskeletal complaints. Although chiropractic has an excellent safety record, no health treatment is completely free of potential adverse effects. The risks associated with chiropractic, however, are very small. Many patients feel immediate relief following chiropractic treatment, but some may experience mild soreness or aching, just as they do after some forms of exercise. Current literature shows that minor discomfort or soreness following spinal manipulation typically fades within 24 hours.&nbsp;&nbsp;</p>
+<p>
+  Neck pain and some types of headaches are treated through precise cervical manipulation. Cervical manipulation, often called a neck adjustment, works to improve joint mobility in the neck, restoring range of motion and reducing muscle spasm, which helps relieve pressure and tension. Neck manipulation is a remarkably safe procedure. While some reports have associated upper high-velocity neck manipulation with a certain kind of stroke, or vertebral artery dissection, recent evidence suggests that this type of arterial injury often takes place spontaneously, or following everyday activities such as turning the head while driving, swimming, or having a shampoo in a hair salon. Patients with this condition may experience neck pain and headache that leads them to seek professional care&mdash;often at the office of a doctor of chiropractic or family physician&mdash;but that care is not the cause of the injury. The best evidence indicates that the incidence of artery injuries associated with high-velocity upper neck manipulation is extremely rare &ndash; about 1 case in 5.85 million manipulations.</p>
+<p>
+  If you are visiting your doctor of chiropractic with upper-neck pain or headache, be very specific about your symptoms. This will help your doctor of chiropractic offer the safest and most effective treatment, even if it involves referral to another health care provider. &nbsp;</p>
+<p>
+  It is important for patients to understand the risks associated with some of the most common treatments for musculoskeletal pain -- prescription and over-the-counter nonsteroidal anti-inflammatory drugs (NSAIDS) -- as these treatments may carry risks significantly greater than those of chiropractic manipulation. According to a study from the American Journal of Gastroenterology, approximately one-third of all hospitalizations and deaths related to gastrointestinal bleeding can be attributed to the use of aspirin or NSAID painkillers like ibuprofen.</p>
+<hr noshade="noshade" size="1" width="100%" />
+<p>
+  <a name="children"></a><strong>Is chiropractic treatment appropriate for children?</strong><br />
+  Yes, children can benefit from chiropractic care. Children are very physically active and experience many types of falls and blows from activities of daily living as well as from participating in sports. Injuries such as these may cause many symptoms including back and neck pain, stiffness, soreness or discomfort. Chiropractic care is always adapted to the individual patient. It is a highly skilled treatment, and in the case of children, very gentle.</p>
+<hr noshade="noshade" size="1" width="100%" />
+<p>
+  <a name="hospitals"></a><strong>Are chiropractors allowed to practice in hospitals or use medical outpatient facilities?</strong><br />
+  Chiropractors are being recognized to admit and treat patients in hospitals and to use outpatient clinical facilities (such as labs, x-rays, etc.) for their non-hospitalized patients.&nbsp; Hospital privileges were first granted in 1983.</p>
+<hr noshade="noshade" size="1" width="100%" />
+<p>
+  <a name="insurance"></a><strong>Do insurance plans cover chiropractic?</strong><br />
+  &nbsp;Yes. Chiropractic care is included in most health insurance plans, including major medical plans, workers&rsquo; compensation, Medicare, some Medicaid plans, and Blue Cross Blue Shield plans for federal employees, among others. Chiropractic care is also available to active-duty members of the armed forces at more than 60 military bases and is available to veterans at 36 major veterans medical facilities.&nbsp;</p>
+<hr noshade="noshade" size="1" width="100%" />
+<p>
+  <a name="education"></a><strong>What type of education and training do chiropractors have?</strong><br />
+  Doctors of chiropracticare educated as primary-contact health care providers, with an emphasis on diagnosis and treatment of conditions related to the musculoskeletal system (the muscles, ligaments and joints of the spine and extremities) and the nerves that supply them. Educational requirements for doctors of chiropractic are among the most stringent of any of the health care professions.&nbsp;&nbsp;&nbsp;</p>
+<p>
+  &nbsp;The typical applicant for chiropractic college has already acquired nearly four years of pre-medical undergraduate college education, including courses in biology, inorganic and organic chemistry, physics, psychology and related lab work. Once accepted into an accredited chiropractic college, the requirements become even more demanding &mdash; four to five academic years of professional study are the standard. Doctors of chiropractic are educated in orthopedics, neurology, physiology, human anatomy, clinical diagnosis including laboratory procedures, diagnostic imaging, exercise, nutrition rehabilitation and more.</p>
+<p>
+  Because chiropractic care includes highly skilled manipulation/adjusting techniques, a significant portion of time is spent in clinical technique training to master these important manipulative procedures.</p>
+<p>
+  In total, the chiropractic college curriculum includes a minimum of 4,200 hours of classroom, laboratory and clinical experience. The course of study is approved by an accrediting agency that is fully recognized by the U.S. Department of Education.</p>
+<hr noshade="noshade" size="1" width="100%" />
+<p>
+  <a name="adjustment"></a><strong>How is a chiropractic adjustment performed?</strong><br />
+  Chiropractic adjustment or manipulation is a manual procedure that utilizes the highly refined skills developed during the doctor of chiropractic&rsquo;s intensive years of chiropractic education. The chiropractic physician typically uses his or her hands--or an instrument--to manipulate the joints of the body, particularly the spine, in order to restore or enhance joint function. This often helps resolve joint inflammation and reduces the patient&#39;s pain. Chiropractic manipulation is a highly controlled procedure that rarely causes discomfort. The chiropractor adapts the procedure to meet the specific needs of each patient. Patients often note positive changes in their symptoms immediately following treatment.&nbsp;</p>
+<hr noshade="noshade" size="1" width="100%" />
+<p>
+  <a name="ongoing"></a><strong>Is chiropractic treatment ongoing?</strong><br />
+  The hands-on nature of the chiropractic treatment is essentially what requires patients to visit the chiropractor a number of times. To be treated by a chiropractor, a patient needs to be in his or her office. In contrast, a course of treatment from medical doctors often involves a pre-established plan that is conducted at home (i.e. taking a course of antibiotics once a day for a couple of weeks). A chiropractor may provide acute, chronic, and/or preventive care thus making a certain number of visits sometimes necessary.&nbsp; Your doctor of chiropractic should tell you the extent of treatment recommended and how long you can expect it to last.</p>
+<hr noshade="noshade" size="1" width="100%" />
+<p>
+  <a name="popping"></a><strong>Why is there a popping sound when a joint is adjusted?</strong><br />
+  Adjustment (or manipulation) of a joint may result in the release of a gas bubble between the joints, which makes a popping sound. The same thing occurs when you &ldquo;crack&rdquo; your knuckles. The noise is caused by the change of pressure within the joint, which results in gas bubbles being released. There is usually minimal, if any, discomfort involved.&nbsp;</p>
+
+
+    <table>
+
+      </table>
+
+
+  </div>
+</div>
+          </div><!-- /.span8 -->
+      </div><!-- /.row -->
+    </div>
+      <div class="push"></div>
+    </div>
+    <br />
+    <br />
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016 Jan Corwin, D.C., LLC &middot; </p>
+      	<p>Questions or Comments? <a href="mailto:jacy.clare@gmail.com">Contact the Webmaster</a></p>
+      </div>
+    </div>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="../assets/js/holder/holder.js"></script>
+  </body>
+</html>
