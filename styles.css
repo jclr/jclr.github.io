@@ -15,6 +15,12 @@ a:visited {
   color: #D2E882;
 }
 
+.logo {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
 .header {
   position: absolute;
   left: 50%;
