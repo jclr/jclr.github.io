@@ -24,6 +24,14 @@ a:visited {
   width: 50vw;
 }
 
+.footer {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  height: 128px;
+  width: 128px;
+}
+
 .header-text, .hideaway {
   font-size: 48px;
   text-align: center;
