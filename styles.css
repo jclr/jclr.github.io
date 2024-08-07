@@ -26,12 +26,15 @@ a:visited {
 
 .footer {
   position: absolute;
-  bottom: 50px;
-  left: 50px;
-  width: 50vw;
+  bottom: 24px;
+  left: 24px;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
+
+.bullet {
+  margin: 0 12px;
 }
 
 .header-text, .hideaway {
