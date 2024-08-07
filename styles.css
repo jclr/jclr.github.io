@@ -19,7 +19,10 @@ a:visited {
   position: absolute;
   top: 24px;
   left: 24px;
-  max-width: 33vw;
+
+  img {
+    max-width: 33vw;
+  }
 }
 
 .header {
