@@ -1,3 +1,9 @@
+body {
+  font-family: "Cutive Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .header {
   position: absolute;
   left: 50%;
@@ -8,10 +14,12 @@
 }
 
 .header-text, .hideaway {
+  font-size: 18px;
   text-align: center;
 }
 
 .hideaway {
+  font-size: 18px;
   margin-top: 48px;
 }
 
