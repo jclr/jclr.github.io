@@ -27,7 +27,7 @@ a:visited {
 .footer {
   position: absolute;
   bottom: 24px;
-  left: 24px;
+  right: 24px;
   display: flex;
   justify-content: space-evenly;
 }
