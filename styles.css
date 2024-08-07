@@ -7,6 +7,14 @@ body {
   line-height: 1.5em;
 }
 
+a {
+ color: #D2E882;
+}
+
+a:visited {
+  color: #D2E882;
+}
+
 .header {
   position: absolute;
   left: 50%;
