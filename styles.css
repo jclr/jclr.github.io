@@ -28,17 +28,18 @@ a:visited {
   position: absolute;
   bottom: 50px;
   left: 50px;
-  height: 128px;
-  width: 128px;
+  width: 50vw;
+  display: flex;
+  justify-content: space-evenly;
+}
 }
 
 .header-text, .hideaway {
-  font-size: 48px;
+  font-size: 24px;
   text-align: center;
 }
 
 .hideaway {
-  font-size: 18px;
   margin-top: 48px;
 }
 
