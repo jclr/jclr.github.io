@@ -28,7 +28,6 @@ a:visited {
   position: absolute;
   bottom: 24px;
   left: 24px;
-  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
